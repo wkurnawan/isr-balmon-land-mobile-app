@@ -37,7 +37,7 @@
             </div>
         </div>
     </nav>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary text-white">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary text-white mb-4">
         <div class="container">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -51,11 +51,11 @@
                     <li class="nav-item {{ Request::is('users*') ? 'active' : '' }}">
                         <a class="nav-link" href="/users">Data Users</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Data Landmobiles</a>
+                    <li class="nav-item {{ Request::is('landmobile*') ? 'active' : '' }}">
+                        <a class="nav-link" href="/landmobile">Data Landmobiles</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Grafik</a>
+                    <li class="nav-item {{ Request::is('grafik*') ? 'active' : '' }}">
+                        <a class="nav-link" href="/grafik">Grafik</a>
                     </li>
                 </ul>
             </div>

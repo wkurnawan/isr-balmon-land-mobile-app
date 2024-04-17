@@ -24,3 +24,11 @@ Route::get('/dashboard', function () {
 Route::get('/users', function () {
     return view('pages.users.index');
 });
+
+Route::get('/landmobile', function () {
+    return view('pages.landmobile.index');
+});
+
+Route::get('/grafik', function () {
+    return view('pages.grafik.index');
+});
