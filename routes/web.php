@@ -18,5 +18,9 @@ Route::get('/', function () {
 });
 
 Route::get('/dashboard', function () {
-    return view('dashboard');
+    return view('pages.dashboard');
+});
+
+Route::get('/users', function () {
+    return view('pages.users.index');
 });
